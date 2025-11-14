@@ -1,219 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ground Game Guidance - Real Healing, Real Community</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Ground Game Guidance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+      background-image: url('GGG-FACEBOOK-IMAGE-3.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      opacity: 0.95;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 1.7rem;
+      border-radius: 999px;
+      border: none;
+      text-decoration: none;
+      font-size: 0.98rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+    }
+
+    .btn-primary {
+      background-color: #0d47a1;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+    }
+
+    .btn-secondary {
+      background-color: #f9a825;
+      color: #1b1b1b;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.45);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 7px rgba(0,0,0,0.35);
+    }
+
+    .note {
+      margin-top: 1.25rem;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+      .overlay {
+        padding: 1.5rem;
+      }
+      .title {
+        font-size: 1.6rem;
+      }
+      .subtitle {
+        font-size: 0.95rem;
+      }
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Ground Game Guidance</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#founders">Founders</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-                            <li><a href="#livestreams">On The Couch With Tripp</a></li>
-            </ul>
-        </div>
-    </nav>
+  <div class="overlay">
+    <!-- HEADER -->
+    <h1 class="title">Ground Game Guidance</h1>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Real Change Starts Here</h1>
-            <p>Healing trauma. Building community. Fighting for everyday people.</p>
-            <div class="cta-buttons">
-                <a href="#pricing" class="btn btn-primary">Join Us Today</a>
-                <a href="#founders" class="btn btn-secondary">Meet the Founders</a>
-            </div>
-        </div>
-    </section>
+    <!-- SUBHEADER -->
+    <p class="subtitle">
+      Join the community and get real help running your campaign’s ground game.
+    </p>
 
-    <!-- FOUNDERS SECTION -->
-    <section id="founders" class="founders">
-        <div class="container">
-            <h2>Meet Your Guides</h2>
-            <p class="section-subtitle">Two founders, one mission: bringing real change to real people</p>
-            <div class="founders-grid">
-                <div class="founder-card">
-                    <div class="founder-avatar">SP</div>
-                    <h3>Steven Powers</h3>
-                    <p class="role">Co-Founder | Trauma Guide & Coaching Specialist</p>
-                    <p>With years of dedicated experience in trauma recovery and personal transformation, Steven guides individuals through their healing journey. His evidence-based coaching techniques help clients rebuild their lives with strength and purpose.</p>
-                </div>
-                <div class="founder-card">
-                    <div class="founder-avatar">EC</div>
-                    <h3>Eric Chapman</h3>
-                    <p class="role">Co-Founder | Musician & Healing Artist</p>
-                    <p>Eric brings the transformative power of music into the healing process. As a talented musician and co-founder, he believes in the profound connection between sound, rhythm, and emotional recovery. His original compositions are designed to complement the therapeutic journey.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- TWO SUBSCRIPTION BUTTONS -->
+    <div class="buttons">
+      <a
+        href="https://buy.stripe.com/bJebJ088h0074bPeC3gjC05"
+        class="btn btn-primary"
+        target="_blank" rel="noopener noreferrer"
+      >
+        Monthly membership
+      </a>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>What We Offer</h2>
-            <p class="section-subtitle">Comprehensive support for your healing journey</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🧠</div>
-                    <h3>Trauma Guidance</h3>
-                    <p>Professional, compassionate guidance to help you process and heal from trauma. Personalized approaches for your unique journey.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎯</div>
-                    <h3>Personal Coaching</h3>
-                    <p>One-on-one coaching sessions with Steven to overcome obstacles, set meaningful goals, and achieve lasting transformation.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎵</div>
-                    <h3>Music Therapy</h3>
-                    <p>Experience healing through Eric's original compositions and therapeutic music. Sound as medicine for your soul.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🤝</div>
-                    <h3>Community Support</h3>
-                    <p>Join a supportive community of individuals on their own healing paths. Share, learn, and grow together.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING SECTION -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <h2>Membership & Pricing</h2>
-            <p class="section-subtitle">Affordable access to healing. Sustainable community support.</p>
-            <div class="pricing-grid">
-                <!-- COMMUNITY TIER -->
-                <div class="pricing-card">
-                    <h3>Community</h3>
-                    <div class="price">$9<span>/month</span></div>
-                    <p class="price-subtitle">or $99/year (Save 8%)</p>
-                    <ul class="features">
-                        <li>✓ Community forum access</li>
-                        <li>✓ Monthly group sessions</li>
-                        <li>✓ Resource library</li>
-                        <li>✓ Eric's music playlist</li>
-                        <li>✗ 1-on-1 coaching</li>
-                        <li>✗ Premium content</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/test_28o6qf9oI2T68E86oo" class="btn btn-primary btn-block">Get Started</a>
-                </div>
-
-                <!-- PROFESSIONAL TIER -->
-                <div class="pricing-card featured">
-                    <div class="badge">Most Popular</div>
-                    <h3>Professional</h3>
-                    <div class="price">$39<span>/month</span></div>
-                    <p class="price-subtitle">or $399/year (Save 15%)</p>
-                    <ul class="features">
-                        <li>✓ Everything in Community</li>
-                        <li>✓ 2 coaching sessions/month</li>
-                        <li>✓ Priority email support</li>
-                        <li>✓ Exclusive music releases</li>
-                        <li>✓ Personalized coaching plan</li>
-                        <li>✗ 24/7 access</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/test_28o6qf9oI2T68E86oo" class="btn btn-primary btn-block">Get Started</a>
-                </div>
-
-                <!-- PREMIUM TIER -->
-                <div class="pricing-card">
-                    <h3>Premium</h3>
-                    <div class="price">$99<span>/month</span></div>
-                    <p class="price-subtitle">or $999/year (Save 16%)</p>
-                    <ul class="features">
-                        <li>✓ Everything in Professional</li>
-                        <li>✓ Unlimited coaching sessions</li>
-                        <li>✓ VIP community access</li>
-                        <li>✓ Private music productions</li>
-                        <li>✓ 24/7 priority support</li>
-                        <li>✓ Custom healing program</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/test_28o6qf9oI2T68E86oo" class="btn btn-primary btn-block">Get Started</a>
-                </div>
-            </div>
-            <p class="pricing-note"><strong>All memberships include:</strong> Access to our full community, monthly newsletters, healing resources, and the support of Steven and Eric's shared mission to bring real change.</p>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Ready to Start Your Journey?</h2>
-            <p>Let's connect and explore how we can support your healing</p>
-            <form id="contact-form" class="contact-form">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
-                <select id="interested" required>
-                    <option value="">What are you interested in?</option>
-                    <option value="coaching">Coaching</option>
-                    <option value="music">Music Therapy</option>
-                    <option value="community">Community</option>
-                    <option value="other">Other</option>
-                </select>
-                <textarea id="message" placeholder="Message" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Ground Game Guidance</h4>
-                    <p>Co-founded by Steven Powers & Eric Chapman</p>
-                    <p>Bringing real change, one person at a time.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#founders">Founders</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: info@groundgameguidance.com</p>
-                    <p>Join our community and start your healing journey today.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ground Game Guidance. All rights reserved.</p>
-                <p>Co-founded by Steven Powers & Eric Chapman | Bringing Change Together</p>
-            </div>
-        </div>
-    </footer>
-
-        <!-- ON THE COUCH WITH TRIPP SECTION -->
-    <section id="livestreams" class="livestreams">
-        <div class="container">
-            <h2>On The Couch With Tripp</h2>
-            <p class="section-subtitle">Real conversations about philosophy, theology, politics, society, and everything in between.</p>
-            
-            <div class="livestream-container">
-                <!-- YouTube Live Stream Embed -->
-                <div class="youtube-player">
-                    <iframe width="100%" height="600" src="https://www.youtube.com/embed/live/UCMqaq4JelMoRecSNbIhL1JA" frameborder="0" allowfullscreen></iframe>
-                </div>
-                
-                <!-- Episode Archive -->
-                <div class="episodes-section">
-                    <h3>Latest Episodes</h3>
-                    <p class="episodes-description">Join Tripp for raw, real conversations with anyone. We talk about the things that matter - the hard conversations, the taboo topics, the real struggles.</p>
-                    <a href="https://www.youtube.com/channel/UCMqaq4JelMoRecSNbIhL1JA" target="_blank" class="btn btn-primary">View All Episodes on YouTube</a>
-                </div>
-            </div>
-        </di
+      <a
+        href="https://buy.stripe.com/9B6fZg74dcMTaAd1PhgjC04"
+        class="btn btn-secondary"
+        target="_blank" rel="noopener
